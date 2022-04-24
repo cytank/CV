@@ -1,0 +1,170 @@
+body{
+    margin: 0;
+    background-color: darkslategray;
+    height: 100%;
+}
+
+*::selection{
+    background-color: rgba(255, 255, 0, 0.562);
+    color: white;
+}
+
+/* Navbar */
+    .navbar{
+        position: fixed;
+        width: 100%;
+        height: 75px;
+        background-color: #212018;
+        display: flex;
+        justify-content: center;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .nav{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .icn{
+        width: 50px;
+        height: 75%;
+        box-shadow: inset 0 0 4px;
+        margin: 0 7px 0 7px;
+        transition: 0.5s;
+    }
+
+    .icn:hover{box-shadow: inset 0 0 7px;}
+    .icn:active{box-shadow: inset 0 0 13px;}
+
+    .icn a{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.966) !important;
+        transition: 1s;
+    }
+
+    .icn a:hover{
+        color: wheat !important; 
+    }
+/* Navbar end */
+
+/* About */
+    #about{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about img{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(50%);
+        z-index: -1;
+        
+    }
+
+    .text{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+    .text span{
+        color: white;
+        font-size: 55px;
+        text-transform: capitalize;
+        line-height: 0.4;
+        
+    }
+
+    .text p{
+        font-size: 27px;
+        text-align: center;
+    }
+
+/* About end */
+
+/* Skills */
+    #skills{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    }
+
+    .tx{
+        font-size: 3.5em;
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    .skl{
+        margin: 0 0 75px 0;
+    }
+
+    .area{
+        width: 80%;
+    }
+
+    .skls{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .frst{
+        width: 100px;
+        font-size: 25px;
+        text-transform: capitalize;
+    }
+
+    .prgs{
+        box-shadow: 0 0 4px black;
+        width: 100%;
+        height: 20px;
+        border-radius: 7px;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    .prgs:hover{box-shadow: 0 0 8px black;}
+
+    .prg{
+        background: rgba(255, 255, 255, 0.247);
+        height: 100%;
+        width: 0%;
+        transition: 1s;
+        
+    }
+
+    .prg.active[name=Html]{width: 80%;}
+    .prg.active[name=Css]{width: 80%;}
+    .prg.active[name=Js]{width: 10%;}
+    .prg.active[name="Php"]{width: 2% !important;}
+    .prg.active[name=Python]{width: 6%;}
+
+/* Skills end */
+
+/* Media */
+
+    @media screen and (max-width: 650px){
+        /* Skills */
+            .skls{display: block;}
+        /* Skills end */
+    }
+
+/* Media end */
